@@ -11,5 +11,9 @@ COPY run_wmp2mqtt.sh ./
 
 RUN npm install
 
-RUN ["chmod", "+x", "./run_wmp2mqtt.sh"]
+RUN chmod a+rw run_wmp2mqtt.sh
+
+RUN adduser -D wmpmqtt
+USER wmpmqtt
+
 ENTRYPOINT ["sh", "./run_wmp2mqtt.sh"]
