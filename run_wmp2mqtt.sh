@@ -17,4 +17,4 @@ echo "Using server ${MQTT_SERVER}"
 
 ARGS="${ARGS} --mqtt ${MQTT_SERVER}"
 
-node wmp2mqtt/app.js $ARGS
+node app.js $ARGS

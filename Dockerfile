@@ -6,7 +6,7 @@ ENV DISCOVER="false"
 
 WORKDIR /wmp2mqtt
 
-COPY wmp2mqtt/* ./
+COPY ./wmp2mqtt/* ./
 COPY run_wmp2mqtt.sh ./
 
 RUN npm install
