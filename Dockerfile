@@ -6,7 +6,7 @@ ENV DISCOVER="false"
 
 WORKDIR /wmp2mqtt
 
-RUN git clone https://github.com/jpg0/wmp2mqtt.git
+COPY wmp2mqtt/* ./
 COPY run_wmp2mqtt.sh ./
 
 RUN npm install
