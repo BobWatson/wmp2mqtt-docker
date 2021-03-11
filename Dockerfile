@@ -11,4 +11,5 @@ COPY run_wmp2mqtt.sh ./
 
 RUN npm install
 
+RUN ["chmod", "+x", "./run_wmp2mqtt.sh"]
 CMD ["./run_wmp2mqtt.sh"]
