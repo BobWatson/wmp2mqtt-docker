@@ -13,7 +13,7 @@ RUN npm install
 
 RUN chmod a+rw run_wmp2mqtt.sh
 
-RUN adduser --disabled-password wmpmqtt
+RUN adduser --gecos "" --disabled-password wmpmqtt
 USER wmpmqtt
 
 ENTRYPOINT ["sh", "./run_wmp2mqtt.sh"]
