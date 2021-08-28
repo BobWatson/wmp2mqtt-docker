@@ -1,3 +1,3 @@
 [submodule "wmp2mqtt"]
 	path = wmp2mqtt
-	url = git@github.com:BobWatson/wmp2mqtt.git
+	url = https://github.com/BobWatson/wmp2mqtt.git
