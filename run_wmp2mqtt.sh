@@ -13,6 +13,12 @@ then
     echo "Discovery is on"
 fi
 
+if [ "${RETAIN}" = "true" ]
+then
+    ARGS="${ARGS} --retain ${RETAIN}"
+    echo "Discovery is on"
+fi
+
 echo "Using server ${MQTT_SERVER}"
 
 ARGS="${ARGS} --mqtt ${MQTT_SERVER}"
