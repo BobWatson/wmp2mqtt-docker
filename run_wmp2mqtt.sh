@@ -1,25 +1,32 @@
 #!/bin/sh
+
+echo "Using server ${MQTT_SERVER}"
+
 ARGS=""
 
 if ! [ "${WMP_IPS}" = "" ]
 then
     ARGS="${ARGS} --wmp ${WMP_IPS}"
     echo "Got IP(s): ${WMP_IPS}"
+else
+    echo "No IPs specified."
 fi
 
 if [ "${DISCOVER}" = "true" ]
 then
     ARGS="${ARGS} --discover"
-    echo "Discovery is on"
+    echo "Discovery is on."
+else
+    echo "Discovery is off."
 fi
 
 if [ "${RETAIN}" = "true" ]
 then
     ARGS="${ARGS} --retain ${RETAIN}"
-    echo "Discovery is on"
+    echo "MQTT retain is on."
+else
+    echo "MQTT retain is off."
 fi
-
-echo "Using server ${MQTT_SERVER}"
 
 ARGS="${ARGS} --mqtt ${MQTT_SERVER}"
 
