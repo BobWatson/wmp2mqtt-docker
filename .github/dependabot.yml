@@ -13,7 +13,7 @@ updates:
     reviewers:
       - "BobWatson"
   - package-ecosystem: "docker"
-    directory: "/build/concept_miner_elastic/app"
+    directory: "/"
     schedule:
       interval: "daily"
     reviewers:
