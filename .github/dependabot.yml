@@ -4,7 +4,17 @@ updates:
     directory: "/"
     schedule:
       interval: "daily"
+    reviewers:
+      - "BobWatson"
   - package-ecosystem: "gitsubmodule"
     directory: "/"
     schedule:
       interval: "daily"
+    reviewers:
+      - "BobWatson"
+  - package-ecosystem: "docker"
+    directory: "/build/concept_miner_elastic/app"
+    schedule:
+      interval: "daily"
+    reviewers:
+      - "BobWatson"
