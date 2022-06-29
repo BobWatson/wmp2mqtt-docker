@@ -30,4 +30,6 @@ fi
 
 ARGS="${ARGS} --mqtt ${MQTT_SERVER}"
 
-node app.js $ARGS
+while node app.js $ARGS; do
+    echo "WMP2MQTT failed, restarting..."
+done
