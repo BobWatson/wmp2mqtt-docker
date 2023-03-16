@@ -1,8 +1,6 @@
 # wmp2mqtt-docker
 A simple Docker image for https://github.com/jpg0/wmp2mqtt
 
-Docker Hub: https://hub.docker.com/r/bossett/wmp2mqtt
-
 Please report any issues in the repository issue tracker at https://github.com/BobWatson/wmp2mqtt-docker/issues
 
 Requires the environment:
