@@ -28,6 +28,14 @@ else
     echo "MQTT retain is off."
 fi
 
+if [ "${OFFMODE}" = "true" ]
+then
+    ARGS="${ARGS} --offmode"
+    echo "Off-mode (HA compatibility) is on."
+else
+    echo "Off-mode (HA compatibility) is off."
+fi
+
 ARGS="${ARGS} --mqtt ${MQTT_SERVER}"
 
 while node app.js $ARGS; do

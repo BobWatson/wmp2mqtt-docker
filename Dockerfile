@@ -4,6 +4,7 @@ ENV MQTT_SERVER=mqtt://127.0.0.1:1883
 ENV WMP_IPS=""
 ENV DISCOVER="false"
 ENV RETAIN="false"
+ENV OFFMODE="false"
 
 WORKDIR /wmp2mqtt
 
